@@ -19,7 +19,7 @@ public static void main(String[] args) {
         
         System.out.println("--- Menu de Algoritmos ---");
         System.out.println("1. Ordenamiento Burbuja");
-        System.out.println("2. (xxx)");
+        System.out.println("2. Ordenamiento Sort");
         System.out.print("Selecciona una opcion: ");
         
         int opcion = sc.nextInt();
@@ -30,14 +30,19 @@ public static void main(String[] args) {
                 Ordenamientos.burbuja(arreglo);
                 imprimirArreglo(arreglo);
                 break;
+            case 2:
+                System.out.println("Ordenamiento por Sort...");
+                Ordenamientos.seleccionSort(arreglo);
+                imprimirArreglo(arreglo);
+                break;
             default:
                 System.out.println("Opcion no valida.");
         }
     }
 
-    public static void imprimirArreglo(int[] arr) {
+    public static void imprimirArreglo(int[] arreglo) {
         System.out.print("Resultado: [ ");
-        for (int num : arr) {
+        for (int num : arreglo) {
             System.out.print(num + " ");
         }
         System.out.println("]");
