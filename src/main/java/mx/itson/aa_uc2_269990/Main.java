@@ -12,7 +12,8 @@ import java.util.Scanner;
  */
 public class Main {
     
-public static void main(String[] args) {
+    public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         
         int[] arreglo = {10, 4, 24, 3, 8, 12};
