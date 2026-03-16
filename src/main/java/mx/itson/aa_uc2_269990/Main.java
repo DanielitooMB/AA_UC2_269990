@@ -20,7 +20,8 @@ public class Main {
         
         System.out.println("--- Menu de Algoritmos ---");
         System.out.println("1. Ordenamiento Burbuja");
-        System.out.println("2. Ordenamiento Sort");
+        System.out.println("2. Ordenamiento por Seleccion");
+        System.out.println("3. Ordenamiento por Insercion");
         System.out.print("Selecciona una opcion: ");
         
         int opcion = sc.nextInt();
@@ -28,14 +29,18 @@ public class Main {
         switch (opcion) {
             case 1:
                 System.out.println("Ordenando por Burbuja...");
-                Ordenamientos.burbuja(arreglo);
+                Ordenamientos.BubbleSort(arreglo);
                 imprimirArreglo(arreglo);
                 break;
             case 2:
-                System.out.println("Ordenamiento por Sort...");
-                Ordenamientos.seleccionSort(arreglo);
+                System.out.println("Ordenamiento por Seleccion...");
+                Ordenamientos.selectionSort(arreglo);
                 imprimirArreglo(arreglo);
                 break;
+            case 3:
+                System.out.println("Ordenamiento por Insercion...");
+                Ordenamientos.insertionSort(arreglo);
+                imprimirArreglo(arreglo);
             default:
                 System.out.println("Opcion no valida.");
         }
