@@ -22,6 +22,7 @@ public class Main {
         System.out.println("1. Ordenamiento Burbuja");
         System.out.println("2. Ordenamiento por Seleccion");
         System.out.println("3. Ordenamiento por Insercion");
+        System.out.println("4. Ordenamiento por Quicksort");
         System.out.print("Selecciona una opcion: ");
         
         int opcion = sc.nextInt();
@@ -41,8 +42,11 @@ public class Main {
                 System.out.println("Ordenamiento por Insercion...");
                 Ordenamientos.insertionSort(arreglo);
                 imprimirArreglo(arreglo);
+            case 4:
+                System.out.println("Ordenamiento por Quicksort...");
+                Quicksort.quicksort(arreglo, 0, arreglo.length - 1); // arreglo=datos a ordenar, 0=indice donde inicia el ordenamiento, arreglo.length-1=indice del ultimo elemento ya que los arreglos empiezan en 0
+                imprimirArreglo(arreglo);
             default:
-                System.out.println("Opcion no valida.");
         }
     }
 

@@ -74,7 +74,7 @@ public class Ordenamientos {
     
     public static void insertionSort(int[] arr) { // arreglo inicial: [10, 4, 24, 3, 8, 12]
 
-                    //complejidad temp // conteo
+                        //complejidad temp // conteo
 
         int n = arr.length; // 1 // n = 6
 
